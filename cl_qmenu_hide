@@ -1,5 +1,6 @@
 --This hides the Spawnmenu (default Q) and the Contextmenu (default C)
 --Only players with the following rank (usergroup) are allowed to open it:
+--add this File to DarkRP Modules and after that Q&C Menu should be disabled
 
 local allowedRanks = {
   ["superadmin"] = true,
