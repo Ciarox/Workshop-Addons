@@ -8,13 +8,13 @@ local allowedRanks = {
   ["moderator"] = true,
 }
 
-hook.Add("ContextMenuOpen", "luctus_hide_spawnmenu", function()
+hook.Add("ContextMenuOpen", "hide_spawnmenu", function()
 	if not allowedRanks[LocalPlayer():GetUserGroup()] then
 		return false
 	end
 end)
 
-hook.Add("SpawnMenuOpen", "luctus_hide_spawnmenu", function()
+hook.Add("SpawnMenuOpen", "hide_spawnmenu", function()
 	if not allowedRanks[LocalPlayer():GetUserGroup()] then
 		return false
 	end
